@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.szxmrt.app.facerecognitionsystem.activity.MainActivity">
+    <SurfaceView
+        android:id="@+id/faceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <SurfaceView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/register"/>
+    <ImageView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tip"/>
+    <TextView
+        android:id="@+id/faceTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="检测到人脸数 : "/>
+    <TextView
+        android:id="@+id/faceNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/faceTip"
+        android:layout_toEndOf="@id/faceTip"
+        android:textSize="20sp"/>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/recycler_uid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/recycler_info"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/recycler_uid"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@id/recycler_uid"
+        android:layout_alignBottom="@id/recycler_uid"
+        android:gravity="center"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/recycler_remove"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/recycler_info"
+        android:layout_alignTop="@id/recycler_uid"
+        android:layout_alignBottom="@id/recycler_uid"
+        android:gravity="center"
+        android:textSize="30sp" />
+</RelativeLayout>

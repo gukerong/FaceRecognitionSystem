@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/toolbar_leftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+    <com.szxmrt.app.facerecognitionsystem.widget.WifiStateView
+        android:id="@+id/toolbar_rightImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/toolbar_clock"/>
+    <com.szxmrt.app.facerecognitionsystem.widget.ClockTextView
+        android:id="@+id/toolbar_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/text"
+        android:textSize="30sp" />
+
+</RelativeLayout>
